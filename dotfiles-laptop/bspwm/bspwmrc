@@ -86,7 +86,7 @@ lxpolkit &
 #synology-drive &
 # Ping result used to wait for internet
 #pingresult=$(ping -c 1 1.1.1.1 > /dev/null ; echo $?)
-z#while [ $pingresult -ne 0 ]; do
+#while [ $pingresult -ne 0 ]; do
 #  pingresult=$(ping -c 1 1.1.1.1 > /dev/null ; echo $?)
 #done
 
