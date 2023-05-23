@@ -41,7 +41,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.
 
 ```bash
 sudo mkdir -p /usr/share/fonts/TTF
-sudo mkdir /usr/share/fonts/TTF
+sudo cp ./fonts/* /usr/share/fonts/TTF/
 fc-cache
 ```
 
