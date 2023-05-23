@@ -61,7 +61,7 @@ cd ..
 8. Install needed packages from Arch AUR repository
 
 ```bash
-yay -S wob nwg-launchers wlsunset azote
+yay -S wob nwg-launchers wlsunset azote pop-fonts
 ```
 
 9. (Optional) Install networkmanager-dmenu (if using networkmanager)
