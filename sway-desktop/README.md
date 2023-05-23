@@ -70,3 +70,17 @@ yay -S wob nwg-launchers wlsunset azote pop-fonts
 yay -S networkmanager-dmenu-git
 ```
 
+10. Add variables to `/etc/profile`
+
+```bash
+sudo nano /etc/profile
+```
+
+At the end of the file append:
+
+```bash
+export XDG_CURRENT_DESKTOP=sway
+export _JAVA_AWT_WM_NONREPARENTING=1
+export MOZ_ENABLE_WAYLAND=1
+export QT_QPA_PLATFORMTHEME=qt5ct
+```
