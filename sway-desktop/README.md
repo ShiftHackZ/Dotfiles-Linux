@@ -2,6 +2,8 @@
 
 Sway 3-monitor multihead configuration with nice soothing pastel Catppuccin color palette.
 
+![Sway 3 monitor multihead desktop](https://raw.githubusercontent.com/ShiftHackZ/Dotfiles-Linux/master/assets/sway-desktop.jpg)
+
 ## Install (Arch Linux)
 
 1. Get needed packages.
