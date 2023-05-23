@@ -1,0 +1,37 @@
+@define-color polar0  #1e1e2e;
+@define-color polar1  #181825;
+@define-color polar2  #313244;
+@define-color polar3  #45475a;
+@define-color polar4  #585b70;
+
+/* Snow Storm */
+@define-color snow0  #d8dee9;
+@define-color snow1  #e5e9f0;
+@define-color snow2  #eceff4;
+
+/* Frost */
+@define-color frost0  #6c7086;
+@define-color frost1  #7f849c;
+@define-color frost2  #9399b2;
+@define-color frost3  #88c0d0;
+@define-color frost4  #5e81ac;
+
+/* Aurora */
+@define-color aur1 #bf616a;
+@define-color aur2 #d08770;
+@define-color aur3 #ebcb8b;
+@define-color aur4 #a3be8c;
+@define-color aur5 #b48ead;
+
+/* DARK */
+@define-color bg       @polar0;
+@define-color bg-light @polar3;
+@define-color accent   @frost1;
+@define-color font     #cdd6f4;
+
+/* LIGHT
+@define-color bg       @snow0;
+@define-color bg-light @show1;
+@define-color accent   @frost2;
+@define-color font     @polar0;
+*/
