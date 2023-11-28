@@ -1,0 +1,31 @@
+# Auth with polkit-gnome:
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# Desktop notifications
+exec mako
+
+# Network Applet
+exec nm-applet --indicator
+
+# GTK3 applications take a long time to start
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+# update env variables
+#exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_SESSION_DESKTOP XDG_SESSION_TYPE XDG_CURRENT_DESKTOP
+#exec hash dbus-update-activation-environment 2>/dev/null && \
+#     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_SESSION_DESKTOP XDG_SESSION_TYPE XDG_CURRENT_DESKTOP=sway
+     
+# Welcome App
+exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
+
+# Sway Fader
+# exec python3 ~/.config/sway/scripts/swayfader.py      
+
+#exec /usr/libexec/xdg-desktop-portal
+
+# Tracker daemon for gnome apps
+# exec tracker daemon -s
+exec (/usr/lib/xdg-desktop-portal -r & /usr/lib/xdg/desktop-portal-wlr)
+
